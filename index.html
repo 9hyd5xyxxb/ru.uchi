@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ось 2</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+    <script data-require="rxjs@*" data-semver="5.1.1" src="https://unpkg.com/rxjs@5.1.1/bundles/Rx.min.js"></script>
+	<script type="text/javascript" src="./paper-full.min.js"></script>
+	<script src="./utils.js"></script>
+	<script src="./script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="expression">
+			<span class="expression__element" id="legendFirst">?</span>
+			<span class="expression__element">+</span>
+			<span class="expression__element" id="legendSecond">?</span>
+			<span class="expression__element">=</span>
+			<span class="expression__element" id="legendSum"><input id="thirdInput" tabindex="3"/>?</span>
+		</div>
+		<div class="inputs">
+			<span id="firstInputWrapper"><input id="firstInput" tabindex="1"></span>
+			<span id="secondInputWrapper"><input id="secondInput" tabindex="2"></span>
+		</div>
+		<div class=ruler>
+			<canvas id="myCanvas" resize></canvas>
+			<div class="sprite"></div>
+		</div>
+	</div>
+</body>
+</html>
